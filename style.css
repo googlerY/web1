@@ -1,0 +1,36 @@
+h1{
+    font-size:70px;
+    text-align: center;
+    border-bottom: solid brown 2px;
+    margin:0px;
+    /* 위 라인과 결과가 같음
+    border-color: brown;
+    border-width:2px;
+    border-style:solid;
+    */
+}
+a{
+    text-decoration:none;
+}
+ol{
+    margin:0px;
+    padding: 50px;
+    padding-left:26px;
+    border-right: solid brown;
+    width: 80px;
+}
+body{
+    margin:0px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+@media(max-width:400px) {
+    #grid{
+        display: block;
+    }
+    #grid ol, h1{
+        border:none;
+    }      
+}
